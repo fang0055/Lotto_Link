@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 100%;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    background-image: url(../image/cash1.png);
+    background-size: cover;
+}
+
+body {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    margin: 0 0 2rem 0;
+}
+
+.page {
+    width: 60%;
+    max-width: 800px;
+    min-width: 475px;
+    padding: 0.5rem 0 1rem 0;
+    background-color: hsla(48, 100%, 50%, 1);
+    box-shadow: 4px 4px 24px;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+p {
+    margin: 1.5rem 0;
+}
+
+#digits {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    padding: 0 0 0.03rem 0.5rem;
+    text-align: center;
+    width: 127px;
+    font-size: 0.8rem;
+}
+
+#max {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    padding: 0 0 0.03rem 0.5rem;
+    text-align: center;
+    width: 127px;
+    font-size: 0.8rem;
+}
+
+#btnSend {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    width: 355px;
+    font-size: 0.8rem;
+}
+
+#btnBack {
+    margin-top: 1rem;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    width: 355px;
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+li {
+    flex-basis: auto;
+    font-weight: 900;
+    padding: 20px 0;
+    width: 70px;
+    margin: 1rem 1.6rem 0 0;
+    background-color: hsla(10, 0%, 94%, 1);
+    border-radius: 50%;
+    border: 6px dashed hsla(10, 80%, 40%, 1);
+    color: hsla(10, 80%, 40%, 1);
+}
+
+
+
+@media (max-width:700px) {
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        margin: 1.75rem 0 0rem 0;
+    }
+
+    #btnSend {
+        width: auto;
+    }
+
+    .page {
+        max-width: 325px;
+        min-width: auto;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    h1 span {
+        display: block;
+    }
+
+    #max,
+    #digits {
+        display: block;
+        margin-top: 0.25rem;
+    }
+
+    #btnBack {
+        width: auto;
+    }
+
+    ul {
+        margin: -1.5rem 0 0 0;
+    }
+
+    li {
+        font-size: 1.2rem;
+        font-weight: 900;
+        padding: 9px 0;
+        width: 40px;
+        margin: 0.5rem 2.5rem 0 0;
+        border: 4px dashed hsla(10, 80%, 40%, 1);
+    }
+}
