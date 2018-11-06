@@ -3,9 +3,14 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
     document.querySelector("#btnBack").addEventListener("click", onoroff);
     document.querySelector("#btnSend").addEventListener("click", generate);
-    
-    document.querySelector("#btnBack").addEventListener("click", )
-    
+
+    document.addEventListener("keypress", function (e) {
+        if (e.keyCode === 13) {
+            generate();
+        }
+        //        console.log(e.keyCode);
+    });
+
     let pages = [];
     pages = document.querySelectorAll(".page");
     let url = "https://davidst.edumedia.ca/mad9014/nums.php";
@@ -30,19 +35,16 @@ function init() {
         } else if (m.value <= 0) {
             alert("Do you want to do this or not? \nNo range no wins!");
             m.focus();
-        } 
-        
-//        else if (m.value < d.value) {
-//            alert("OK. It seems you are not good at math. \nThe range should be bigger than the number of digits.");
-//            m.focus();
-//        } 
-        
+        }
+
+        //        else if (m.value < d.value) {
+        //            alert("OK. It seems you are not good at math. \nThe range should be bigger than the number of digits.");
+        //            m.focus();
+        //        } 
         else if (m.value - d.value < 0) {
             alert("OK. It seems you are not good at math. \nThe range should be bigger than the number of digits.");
             m.focus();
-        } 
-        
-        else if (m.value > 99) {
+        } else if (m.value > 99) {
             alert(m.value + " is obviously bigger than 99, right?");
             m.focus();
         } else if (m.value - Math.ceil(m.value) < 0) {
