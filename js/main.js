@@ -1,3 +1,8 @@
+/* 
+Link Zhou Fang
+2018-11-06
+*/
+
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
